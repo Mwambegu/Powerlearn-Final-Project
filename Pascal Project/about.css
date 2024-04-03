@@ -1,0 +1,37 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+/* Core values styles */
+.core-values {
+    padding-left: 20px;
+}
+
+.core-values li {
+    margin-bottom: 10px;
+}
+
+.core-values strong {
+    font-weight: bold;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Services</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <div class="services">
+        <div class="service">
+            <h2>Hardware Repair</h2>
+            <p>Description: We fix hardware issues such as faulty components, broken screens, etc.</p>
+            <p>Price: 10000</p>
+            <button onclick="bookService(1)">Book Now</button>
+        </div>
+        <div class="service">
+            <h2>Software Installation</h2>
+            <p>Description: We install and configure software according to your requirements.</p>
+            <p>Price: 2500</p>
+            <button onclick="bookService(2)">Book Now</button>
+        </div>
+        <div class="service">
+            <h2>Virus Removal</h2>
+            <p>Description: We remove viruses, malware, and other security threats from your system.</p>
+            <p>Price: ksh 70000</p>
+            <button onclick="bookService(3)">Book Now</button>
+        </div>
+        <div class="service">
+            <h2>Data Recovery</h2>
+            <p>Description: We recover lost or corrupted data from hard drives, SSDs, and other storage devices.</p>
+            <p>Price: ksh 100000</p>
+            <button onclick="bookService(4)">Book Now</button>
+        </div>
+        <div class="service">
+            <h2>Networking Setup</h2>
+            <p>Description: We set up wired or wireless networks, including routers, switches, and access points.</p>
+            <p>Price: ksh 150000</p>
+            <button onclick="bookService(5)">Book Now</button>
+        </div>
+        <div class="service">
+            <h2>System Upgrade</h2>
+            <p>Description: We upgrade hardware components such as RAM, CPU, and graphics cards to improve performance.</p>
+            <p>Price: ksh 20000</p>
+            <button onclick="bookService(6)">Book Now</button>
+        </div>
+    </div>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Booking Details</h2>
+            <form action="service.php" method="POST">
+                <input type="hidden" id="serviceId" name="serviceId">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+                <button type="submit">Book & Pay</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="service.js"></script>
+</body>
+</html>
